@@ -1,0 +1,5 @@
+CHART:
+https://bng86.gitbooks.io/android-third-party-/content/mpandroidchart.html
+
+CAPTCHA:
+https://segmentfault.com/a/1190000039386432
