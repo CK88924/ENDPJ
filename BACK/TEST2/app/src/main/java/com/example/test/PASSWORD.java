@@ -56,6 +56,8 @@ public class PASSWORD extends AppCompatActivity {
                                 KeyAES.getBytes("UTF-8"),
                                 pass.getText().toString().getBytes("UTF-8"));
                                 text = Base64.encodeToString(TextByte, Base64.DEFAULT);
+                                setTitle(text);
+
 
 
 
