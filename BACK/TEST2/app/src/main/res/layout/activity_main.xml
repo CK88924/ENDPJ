@@ -29,5 +29,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Aes" />
+
+        <Button
+            android:id="@+id/icon_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="圖示列表" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

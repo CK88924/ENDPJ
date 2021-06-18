@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PASSWORD"></activity>
+        <activity android:name=".ICIONLIST"></activity>
+        <activity android:name=".PASSWORD" />
         <activity android:name=".CHART" />
         <activity android:name=".CAPTCHA" />
         <activity android:name=".MainActivity">
