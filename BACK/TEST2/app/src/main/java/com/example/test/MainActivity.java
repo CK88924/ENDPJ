@@ -21,7 +21,7 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private Button chart,captcha,AES,icon_btn;
+    private Button chart,captcha,AES,icon_btn,qr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,10 +35,12 @@ public class MainActivity extends AppCompatActivity {
         captcha =(Button) findViewById(R.id.captcha);
         AES =(Button) findViewById(R.id.AES);
         icon_btn = (Button)findViewById(R.id.icon_btn);
+        qr = (Button)findViewById(R.id.qr);
         chart.setOnClickListener(btnListener);
         captcha.setOnClickListener(btnListener);
         AES.setOnClickListener(btnListener);
         icon_btn.setOnClickListener(btnListener);
+        qr.setOnClickListener(btnListener);
 
     }//FindId()
 
@@ -64,6 +66,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
 
             }//icon_btn()
+            if (v.getId()==R.id.qr){
+                Intent intent = new Intent(MainActivity.this, QR.class);
+                startActivity(intent);
+
+            }//QR()
 
         }//onClick()
 

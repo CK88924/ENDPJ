@@ -35,5 +35,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="圖示列表" />
+
+        <Button
+            android:id="@+id/qr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="生成QR" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
