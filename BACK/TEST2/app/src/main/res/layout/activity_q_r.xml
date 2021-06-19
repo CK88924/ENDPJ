@@ -29,6 +29,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="顯示QR" />
+
+        <Button
+            android:id="@+id/scan_qr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="掃描QR" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

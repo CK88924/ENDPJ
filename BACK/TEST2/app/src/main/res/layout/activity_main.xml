@@ -40,6 +40,6 @@
             android:id="@+id/qr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="生成QR" />
+            android:text="QR" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
