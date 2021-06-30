@@ -3,3 +3,7 @@ https://bng86.gitbooks.io/android-third-party-/content/mpandroidchart.html
 
 CAPTCHA:
 https://segmentfault.com/a/1190000039386432
+
+驗證手機號碼格式:https://blog.csdn.net/qq_31017737/article/details/8278225
+
+撥號與簡訊:https://code.tutsplus.com/zh-hant/tutorials/how-to-make-calls-and-use-sms-in-android-apps--cms-28168
