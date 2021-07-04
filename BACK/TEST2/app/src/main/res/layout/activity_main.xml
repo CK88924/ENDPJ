@@ -19,6 +19,12 @@
             android:text="圖表" />
 
         <Button
+            android:id="@+id/line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="折線圖" />
+
+        <Button
             android:id="@+id/captcha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,5 +53,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="電話功能" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

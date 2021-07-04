@@ -27,6 +27,7 @@ android {
 repositories {
 
     maven { url "https://jitpack.io" }
+    mavenCentral()
 }
 
 dependencies {
@@ -46,6 +47,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     compile 'org.apache.httpcomponents:httpcore:4.4.4'
     compile 'com.googlecode.libphonenumber:libphonenumber:8.12.25'
+    compile group: 'com.google.guava', name: 'guava', version: '21.0'
 
 
 
