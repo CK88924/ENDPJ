@@ -254,7 +254,7 @@ public class Line_Chart extends AppCompatActivity {
         List<List<Entry>> test_subLists = Lists.partition(new ArrayList<>(temp_list),12);
         for(int i =0; i < test_subLists.size(); i++){
             LineDataSet temp_set = new LineDataSet(test_subLists.get(i),"折線" + i);
-            temp_set.setDrawValues(false);//不顯示數值
+            //temp_set.setDrawValues(false);//不顯示數值
             setLine(temp_set);
             Animation(temp_set);
             temp_set.setColor(Color.rgb(random.nextInt(256),random.nextInt(256),random.nextInt(256)));
