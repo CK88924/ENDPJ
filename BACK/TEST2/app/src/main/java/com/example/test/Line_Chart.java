@@ -15,6 +15,7 @@ import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
+import com.github.mikephil.charting.data.PieEntry;
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
 import com.github.mikephil.charting.highlight.Highlight;
 import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
@@ -302,9 +303,11 @@ public class Line_Chart extends AppCompatActivity {
 
         @Override
         public void onValueSelected(Entry e, Highlight h) {
-            MyMarkerView myMarkerView = new MyMarkerView(Line_Chart.this);
-            myMarkerView.setChartView(lineChart);
-            lineChart.setMarker(myMarkerView);
+            //MyMarkerView myMarkerView = new MyMarkerView(Line_Chart.this);
+            //myMarkerView.setChartView(lineChart);
+            MyMarkerView2 myMarkerView2 = new MyMarkerView2(Line_Chart.this);
+            myMarkerView2.setChartView(lineChart);
+            lineChart.setMarker(myMarkerView2);
         }//選中//區塊內程式碼需將 lineChart.setTouchEnabled(true);否則數值無效
 
         @Override
