@@ -1,0 +1,1 @@
+setTitle(""+h.getX()+""+h.getDataSetIndex());//getX()抓哪一個點(點的index)getDataSetIndex()(線的index)
