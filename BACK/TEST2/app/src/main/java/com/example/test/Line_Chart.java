@@ -305,6 +305,7 @@ public class Line_Chart extends AppCompatActivity {
         public void onValueSelected(Entry e, Highlight h) {
             //MyMarkerView myMarkerView = new MyMarkerView(Line_Chart.this);
             //myMarkerView.setChartView(lineChart);
+            setTitle("線:"+ h.getDataSetIndex() + "\t"+ "點:" + h.getX());
             MyMarkerView2 myMarkerView2 = new MyMarkerView2(Line_Chart.this);
             myMarkerView2.setChartView(lineChart);
             lineChart.setMarker(myMarkerView2);

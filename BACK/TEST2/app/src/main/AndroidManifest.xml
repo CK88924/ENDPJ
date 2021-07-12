@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Line_Chart"></activity>
+        <activity android:name=".DB_TEST"></activity>
+        <activity android:name=".Line_Chart" />
         <activity android:name=".PHONE" />
         <activity android:name=".SCAN_QR" />
         <activity android:name=".QR" />
