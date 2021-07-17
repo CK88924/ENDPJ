@@ -60,5 +60,17 @@
             android:layout_height="wrap_content"
             android:text="資料庫測試" />
 
+        <Button
+            android:id="@+id/js_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JS值設定" />
+
+        <Button
+            android:id="@+id/IMAGE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="圖片功能" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

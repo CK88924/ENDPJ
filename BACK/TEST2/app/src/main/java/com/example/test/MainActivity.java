@@ -3,25 +3,12 @@ package com.example.test;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.github.mikephil.charting.animation.Easing;
-import com.github.mikephil.charting.charts.BarChart;
-import com.github.mikephil.charting.components.Legend;
-import com.github.mikephil.charting.components.XAxis;
-import com.github.mikephil.charting.components.YAxis;
-import com.github.mikephil.charting.data.BarData;
-import com.github.mikephil.charting.data.BarDataSet;
-import com.github.mikephil.charting.data.BarEntry;
-import com.github.mikephil.charting.utils.ColorTemplate;
-
-import java.util.ArrayList;
-
 public class MainActivity extends AppCompatActivity {
-    private Button chart,captcha,AES,icon_btn,qr,phone_function,line_chart,db;
+    private Button chart,captcha,AES,icon_btn,qr,phone_function,line_chart,db,js_value,IMAGE;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         icon_btn = (Button)findViewById(R.id.icon_btn);
         qr = (Button)findViewById(R.id.qr);
         db = (Button)findViewById(R.id.db);
+        js_value = (Button)findViewById(R.id.js_value);
+        IMAGE = (Button)findViewById(R.id.IMAGE);
         phone_function=(Button)findViewById(R.id.phone_function);
         chart.setOnClickListener(btnListener);
         line_chart.setOnClickListener(btnListener);
@@ -47,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
         qr.setOnClickListener(btnListener);
         phone_function.setOnClickListener(btnListener);
         db.setOnClickListener(btnListener);
-
+        js_value.setOnClickListener(btnListener);
+        IMAGE.setOnClickListener(btnListener);
     }//FindId()
 
     private View.OnClickListener btnListener = new View.OnClickListener() {
@@ -92,6 +82,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
 
             }//db
+            if (v.getId()==R.id.js_value){
+                Intent intent = new Intent(MainActivity.this, JS.class);
+                startActivity(intent);
+
+            }//js_value
+            if (v.getId()==R.id.IMAGE){
+                Intent intent = new Intent(MainActivity.this, Image_function.class);
+                startActivity(intent);
+
+            }//Image_function
 
         }//onClick()
 

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Image_function">
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="161dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/image_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="載入圖片" />
+
+            <Button
+                android:id="@+id/image_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上傳圖片" />
+
+            <Button
+                android:id="@+id/image_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="讀取圖片" />
+
+            <Button
+                android:id="@+id/image_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刪除圖片" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/Image_Show"
+        android:layout_width="203dp"
+        android:layout_height="329dp"
+        tools:layout_editor_absoluteY="61dp"
+        tools:src="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/image_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="@+id/tableLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/Image_Show" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
