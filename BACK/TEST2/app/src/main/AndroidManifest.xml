@@ -16,7 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Image_function"></activity>
+        <activity android:name=".Commodity_Inf"></activity>
+        <activity android:name=".Image_function" />
         <activity android:name=".JS" />
         <activity android:name=".DB_TEST" />
         <activity android:name=".Line_Chart" />

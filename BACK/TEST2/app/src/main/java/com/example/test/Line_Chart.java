@@ -3,6 +3,7 @@ package com.example.test;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import com.github.mikephil.charting.charts.LineChart;
@@ -55,7 +56,7 @@ public class Line_Chart extends AppCompatActivity {
         //設定線條的顏色
         set.setColor(Color.RED);
         //虛線模式下繪製直線
-        set.enableDashedLine(20f, 5f, 0f);
+        //set.enableDashedLine(20f, 5f, 0f);
         //點選後高亮線的顯示顏色
         set.enableDashedHighlightLine(50f, 15f, 0f);
 
@@ -64,7 +65,7 @@ public class Line_Chart extends AppCompatActivity {
         //設定圓點是否有空心
         set.setDrawCircles(true);
         //設定線條的寬度，最大10f,最小0.2f
-        set.setLineWidth(1f);
+        set.setLineWidth(3f);
         //設定小圓點的半徑，最小1f，預設4f
         set.setCircleRadius(5f);
         //設定是否顯示小圓點
@@ -255,7 +256,7 @@ public class Line_Chart extends AppCompatActivity {
         List<List<Entry>> test_subLists = Lists.partition(new ArrayList<>(temp_list),12);
         for(int i =0; i < test_subLists.size(); i++){
             LineDataSet temp_set = new LineDataSet(test_subLists.get(i),"折線" + i);
-            //temp_set.setDrawValues(false);//不顯示數值
+            temp_set.setDrawValues(false);//不顯示數值
             setLine(temp_set);
             Animation(temp_set);
             temp_set.setColor(Color.rgb(random.nextInt(256),random.nextInt(256),random.nextInt(256)));
@@ -303,12 +304,12 @@ public class Line_Chart extends AppCompatActivity {
 
         @Override
         public void onValueSelected(Entry e, Highlight h) {
-            //MyMarkerView myMarkerView = new MyMarkerView(Line_Chart.this);
-            //myMarkerView.setChartView(lineChart);
+            MyMarkerView myMarkerView = new MyMarkerView(Line_Chart.this);
+            myMarkerView.setChartView(lineChart);
             setTitle("線:"+ h.getDataSetIndex() + "\t"+ "點:" + h.getX());
-            MyMarkerView2 myMarkerView2 = new MyMarkerView2(Line_Chart.this);
-            myMarkerView2.setChartView(lineChart);
-            lineChart.setMarker(myMarkerView2);
+            //MyMarkerView2 myMarkerView2 = new MyMarkerView2(Line_Chart.this);
+            //myMarkerView2.setChartView(lineChart);
+            lineChart.setMarker(myMarkerView);
         }//選中//區塊內程式碼需將 lineChart.setTouchEnabled(true);否則數值無效
 
         @Override

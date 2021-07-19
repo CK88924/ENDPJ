@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button chart,captcha,AES,icon_btn,qr,phone_function,line_chart,db,js_value,IMAGE;
+    private Button chart,captcha,AES,icon_btn,qr,phone_function,line_chart,db,js_value,IMAGE,insert_product;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         js_value = (Button)findViewById(R.id.js_value);
         IMAGE = (Button)findViewById(R.id.IMAGE);
         phone_function=(Button)findViewById(R.id.phone_function);
+        insert_product=(Button)findViewById(R.id.insert_product);
         chart.setOnClickListener(btnListener);
         line_chart.setOnClickListener(btnListener);
         captcha.setOnClickListener(btnListener);
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         db.setOnClickListener(btnListener);
         js_value.setOnClickListener(btnListener);
         IMAGE.setOnClickListener(btnListener);
+        insert_product.setOnClickListener(btnListener);
     }//FindId()
 
     private View.OnClickListener btnListener = new View.OnClickListener() {
@@ -92,6 +94,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
 
             }//Image_function
+
+            if (v.getId()==R.id.insert_product){
+                Intent intent = new Intent(MainActivity.this, Commodity_Inf.class);
+                startActivity(intent);
+
+            }//insert_product
 
         }//onClick()
 
